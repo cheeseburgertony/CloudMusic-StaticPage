@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网易云-轮播图</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <style>
+    .banner {
+      height: 285px;
+      background: url(./images/banner.jpg) center center / 6000px;
+    }
+
+    .banner .area {
+      position: relative;
+      height: 100%;
+      background-color: skyblue;
+    }
+
+    .banner .area .area-left {
+      position: relative;
+      width: 730px;
+    }
+
+    /* 轮播图列表 */
+    .banner .area .area-left .img-list {
+      display: flex;
+      width: 730px;
+      overflow: hidden;
+    }
+
+    .banner .area .area-left li {
+      flex-shrink: 0;
+    }
+
+    .banner .area .area-left .item img {
+      width: 100%;
+      height: 285px;
+    }
+
+    /* 指示器 */
+    .banner .area-left .dots-list {
+      display: flex;
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      right: 0;
+      justify-content: center;
+    }
+
+    .banner .area-left .dots-list .item {
+      margin: 0 2px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url('./images/banner-sprite.png') 3px -343px;
+    }
+
+    .banner .area-left .dots-list .item.active,
+    .banner .area-left .dots-list .item:hover {
+      background: url('./images/banner-sprite.png') -16px -343px;
+      ;
+    }
+
+    .banner .area-right {
+      position: absolute;
+      right: -1px;
+      bottom: 0;
+      top: 0;
+      width: 254px;
+      background: url(./images/download-sprite.png);
+    }
+
+    .banner .area-right .download {
+      display: block;
+      margin: 186px 0 0 19px;
+      width: 215px;
+      height: 56px;
+      text-indent: -9999px;
+    }
+
+    .banner .area-right .download:hover {
+      background: url(./images/download-sprite.png) 0 -290px;
+    }
+
+    .banner .area-right .desc {
+      margin: 10px 0;
+      text-align: center;
+      color: #8d8d8d;
+    }
+
+    .banner .area .control {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: 37px;
+      height: 63px;
+      background-color: pink;
+      background: url(./images/banner-sprite.png);
+    }
+
+    .banner .area .control.left {
+      left: -68px;
+      background-position: 0 -360px;
+    }
+
+    .banner .area .control.left:hover {
+      left: -68px;
+      background-position: 0 -430px;
+    }
+
+    .banner .area .control.right {
+      right: -68px;
+      background-position: 0 -508px;
+    }
+
+    .banner .area .control.right:hover {
+      right: -68px;
+      background-position: 0 -578px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="banner">
+    <div class="area wrapper_03">
+      <div class="area-left">
+        <ul class="img-list">
+          <li><a href="#" class="item"><img src="./images/banner01.jpg" alt=""></a></li>
+          <li><a href="#" class="item"><img src="./images/banner01.jpg" alt=""></a></li>
+          <li><a href="#" class="item"><img src="./images/banner01.jpg" alt=""></a></li>
+          <li><a href="#" class="item"><img src="./images/banner01.jpg" alt=""></a></li>
+          <li><a href="#" class="item"><img src="./images/banner01.jpg" alt=""></a></li>
+          <li><a href="#" class="item"><img src="./images/banner01.jpg" alt=""></a></li>
+        </ul>
+        <ul class="dots-list">
+          <li><a href="#" class="item active"></a></li>
+          <li><a href="#" class="item"></a></li>
+          <li><a href="#" class="item"></a></li>
+          <li><a href="#" class="item"></a></li>
+          <li><a href="#" class="item"></a></li>
+          <li><a href="#" class="item"></a></li>
+          <li><a href="#" class="item"></a></li>
+          <li><a href="#" class="item"></a></li>
+          <li><a href="#" class="item"></a></li>
+          <li><a href="#" class="item"></a></li>
+        </ul>
+      </div>
+      <div class="area-right">
+        <a href="#" class="download">下载客户端</a>
+        <p class="desc">PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+      </div>
+      <a href="#" class="control left"></a>
+      <a href="#" class="control right"></a>
+    </div>
+  </div>
+</body>
+
+</html>

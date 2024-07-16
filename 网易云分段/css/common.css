@@ -1,0 +1,107 @@
+ body {
+   font: 12px Arial, Helvetica, sans-serif;
+ }
+
+ .wrapper_01 {
+   width: 1100px;
+   margin: 0 auto;
+ }
+
+ .wrapper_02 {
+   width: 980px;
+   margin: 0 auto;
+ }
+
+ .wrapper_03 {
+   width: 982px;
+   margin: 0 auto;
+ }
+
+ /* 导航栏图标 */
+ .topbar_sprite {
+   display: block;
+   background: url(../images/topbar-sprite.png);
+ }
+
+ .topbar_icon_hot {
+   width: 28px;
+   height: 19px;
+   background-position: -190px 0;
+ }
+
+ /* 按钮图标 */
+ .btn_sprite {
+   display: inline-block;
+   height: 31px;
+   line-height: 31px;
+   background: url(../images/btn-sprite.png);
+ }
+
+ .btn_type_01_sup {
+   background-position: right -100px;
+   padding-right: 4px;
+   overflow: hidden;
+ }
+
+ .btn_type_01_sup:hover {
+   background-position: right -182px;
+   padding-right: 4px;
+   overflow: hidden;
+ }
+
+ .btn_type_01_sub {
+   display: block;
+   text-align: center;
+   background-position: 0 -59px;
+   padding-left: 4px;
+ }
+
+ .btn_type_01_sub:hover {
+   display: block;
+   text-align: center;
+   background-position: 0 -141px;
+   padding-left: 4px;
+ }
+
+ .btn_type_favor_sup {
+   background-position: right -1020px;
+   padding-right: 4px;
+   overflow: hidden;
+ }
+
+ .btn_type_favor_sub {
+   display: block;
+   text-align: center;
+   background-position: 0 -977px;
+   padding-left: 28px;
+   padding-right: 4px;
+ }
+
+ /* 封面图标 */
+ .icon_sprite {
+   display: inline-block;
+   background: url(../images/icon-sprite.png);
+ }
+
+ .icon_sprite_music {
+   width: 14px;
+   height: 11px;
+   background-position: 0 -24px;
+ }
+
+ .icon_sprite_play {
+   width: 16px;
+   height: 17px;
+   background-position: 0 0;
+ }
+
+ .iconall_sprite {
+   display: inline-block;
+   background: url(../images/iconall-sprite.png);
+ }
+
+ .iconall_sprite_radio {
+   width: 35px;
+   height: 15px;
+   background-position: -31px -658px;
+ }
