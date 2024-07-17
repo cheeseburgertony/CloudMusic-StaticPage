@@ -1,0 +1,161 @@
+/* header区域样式 */
+.top {
+  height: 70px;
+  background-color: #242424;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  height: 69px;
+  line-height: 69px;
+}
+
+.bar-left .logo {
+  background-image: url(../images/topbar-sprite.png);
+}
+
+.bar-left .logo a {
+  display: block;
+  padding-right: 20px;
+  width: 157px;
+  text-indent: -9999px;
+}
+
+.topbar .bar-left {
+  display: flex;
+}
+
+.topbar .bar-left .list {
+  display: flex;
+}
+
+.topbar .bar-left .list .item {
+  position: relative;
+  display: block;
+  padding: 0 19px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.topbar .bar-left .list .item.active,
+.topbar .bar-left .list .item:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.topbar .bar-left .list .item.active::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 7px;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url(../images/topbar-sprite.png) -105px -70px;
+  background-size: 120px auto;
+}
+
+.topbar .bar-left .list .item .hot-icon {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  /* width: 28px;
+  height: 19px;
+  background: url(../images/topbar-sprite.png) -190px 0; */
+}
+
+.topbar .bar-right {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.topbar .bar-right .login {
+  margin-left: 20px;
+}
+
+.topbar .bar-right .login:hover a {
+  color: #ccc;
+}
+
+.topbar .bar-right .login a {
+  color: #787878;
+}
+
+.topbar .bar-right .login a:hover {
+  color: #787878;
+}
+
+.topbar .bar-right .author a {
+  display: inline-block;
+  margin-left: 16px;
+  width: 90px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #4f4f4f;
+  border-radius: 20px;
+  color: #ccc;
+}
+
+.topbar .bar-right .search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  padding-right: 10px;
+  width: 158px;
+  height: 32px;
+  line-height: 32px;
+  background: #fff url(../images/topbar-sprite.png) 0 -99px;
+  border-radius: 32px;
+}
+
+.topbar .bar-right .search input {
+  width: 115px;
+  height: 16px;
+  font-size: 12px;
+}
+
+.topbar .bar-right .search input::placeholder {
+  color: #9b9b9b;
+}
+
+.nav {
+  height: 35px;
+  line-height: 35px;
+  box-sizing: border-box;
+  background-color: #C20C0C;
+  border-bottom: 1px solid #a40011;
+}
+
+.navbar .list {
+  display: flex;
+  padding-left: 180px;
+}
+
+.navbar .list .item {
+  display: block;
+  height: 34px;
+  /* text-align: center; */
+}
+
+.navbar .list .item span {
+  display: inline-block;
+  padding: 0 13px;
+  margin: 7px 17px 0;
+  height: 20px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.navbar .list .item:hover span,
+.navbar .list .item.active span {
+  background-color: #9B0909;
+  border-radius: 20px;
+}

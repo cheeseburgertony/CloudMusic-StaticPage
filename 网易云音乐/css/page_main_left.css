@@ -1,0 +1,352 @@
+/* main左侧区域样式 */
+.main .area-left {
+  padding: 20px 20px 40px;
+  width: 729px;
+}
+
+/* r热门推荐 */
+.recommend-section .content-list {
+  padding: 20px 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recommend-section .content-item {
+  width: 140px;
+  height: 204px;
+  margin-bottom: 30px;
+}
+
+.recommend-section .content-item .cover {
+  position: relative;
+}
+
+.recommend-section .content-item .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/coverall-sprite.png) 0 0;
+}
+
+.recommend-section .content-item .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 27px;
+  background: url(../images/coverall-sprite.png) 0 -537px;
+  color: #ccc;
+}
+
+.recommend-section .content-item .info .icon_music {
+  margin: 9px 2px -1px 10px;
+}
+
+.recommend-section .content-item .info .icon_play {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+.recommend-section .content-item .desc {
+  margin: 8px 0 3px;
+  font-size: 14px;
+  color: #000;
+}
+
+.recommend-section .content-item .desc .icon_radio {
+  position: relative;
+  top: 2px;
+}
+
+/* 新碟上架 */
+.disk-section .content {
+  margin: 20px 0 37px;
+  height: 186px;
+  box-sizing: border-box;
+  border: 1px solid #d3d3d3;
+}
+
+.disk-section .innner {
+  position: relative;
+  padding: 0 24px;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  border: 1px solid #fff;
+}
+
+.disk-section .innner .roller {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+.disk-section .roller .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.disk-section .roller .item {
+  width: 118px;
+  height: 150px;
+  background: url(../images/main-sprite.png) no-repeat -260px 100px;
+}
+
+.disk-section .roller .album {
+  position: relative;
+}
+
+.disk-section .roller .album .cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/coverall-sprite.png) no-repeat 0 -570px;
+}
+
+.disk-section .roller .album .icon_play {
+  display: none;
+  position: absolute;
+  right: 14px;
+  bottom: 5px;
+  width: 22px;
+  height: 22px;
+  background: url(../images/icon-sprite.png) 0 -85px;
+}
+
+.disk-section .roller .album:hover .icon_play {
+  display: block;
+}
+
+.disk-section .roller .item a {
+  display: block;
+  margin-top: 6px;
+  padding-right: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.disk-section .roller .item a:hover {
+  text-decoration: underline;
+}
+
+.disk-section .roller .item a.song-name {
+  margin-top: 10px;
+  color: #000;
+}
+
+.disk-section .roller .item a.author {
+  color: #666;
+}
+
+.disk-section .innner .control {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 70px;
+  background: url(../images/main-sprite.png);
+}
+
+.disk-section .innner .left-control {
+  left: 2px;
+  background-position: -260px -75px;
+}
+
+.disk-section .innner .left-control:hover {
+  background-position: -280px -75px;
+}
+
+.disk-section .innner .right-control {
+  right: 5px;
+  background-position: -300px -75px;
+}
+
+.disk-section .innner .right-control:hover {
+  background-position: -320px -75px;
+}
+
+.rank-section .content {
+  display: flex;
+  margin-top: 20px;
+  height: 472px;
+  background: url(../images/rank-bg.png);
+}
+
+.rank-section .content .rank {
+  width: 230px;
+}
+
+.rank-section .rank .header {
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 0 0 20px;
+  height: 120px;
+}
+
+.rank-section .rank .header .album {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.rank-section .rank .header .album img {
+  width: 100%;
+  height: 100%;
+}
+
+.rank-section .rank .header .album .cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/coverall-sprite.png) -145px -57px;
+}
+
+.rank-section .rank .header .info {
+  flex: 1;
+}
+
+.rank-section .rank .header .info .text {
+  display: block;
+  margin: 6px 0 0 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+.rank-section .rank .header .info .title {
+  width: 100%;
+  display: inline-block;
+}
+
+.rank-section .rank .header .info .title:hover {
+  text-decoration: underline;
+}
+
+.rank-section .rank .info .btn {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url(../images/main-sprite.png);
+}
+
+.rank-section .rank .info .operation {
+  padding: 10px 0 0 10px;
+}
+
+.rank-section .rank .info .btn.btn-play {
+  background-position: -267px -205px;
+}
+
+.rank-section .rank .info .btn.btn-play:hover {
+  background-position: -267px -235px;
+}
+
+.rank-section .rank .info .btn.btn-favor {
+  background-position: -300px -205px;
+  margin-left: 5px;
+}
+
+.rank-section .rank .info .btn.btn-favor:hover {
+  background-position: -300px -235px;
+}
+
+.rank-section .rank .list {
+  padding-left: 14px;
+}
+
+.rank-section .rank .list .item {
+  display: flex;
+  height: 32px;
+  line-height: 32px;
+  padding-right: 1px;
+  /* padding: 0 1px 0 14px; */
+}
+
+.rank-section .rank .list .item .no {
+  width: 35px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+
+.rank-section .rank .list .item:nth-child(-n+3) .no {
+  color: #c10d0c;
+}
+
+.rank-section .rank .list .item .song {
+  flex: 1;
+  font-size: 12px;
+  color: #000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.rank-section .rank .list .item .song:hover {
+  text-decoration: underline;
+}
+
+.rank-section .rank .list .item .operation {
+  display: none;
+  width: 82px;
+}
+
+/* + 代表相邻兄弟选择器 */
+.rank-section .rank .list .item:hover .operation {
+  display: flex;
+}
+
+.rank-section .rank .list .operation .btn {
+  margin: auto 0;
+  margin-right: 8px;
+  width: 17px;
+  height: 17px;
+  background: url(../images/main-sprite.png) no-repeat;
+}
+
+.rank-section .rank .operation .btn.play {
+  background-position: -267px -268px;
+}
+
+.rank-section .rank .operation .btn.play:hover {
+  background-position: -267px -288px;
+}
+
+.rank-section .rank .operation .btn.add {
+  background-image: url(../images/iconall-sprite.png);
+  background-position: 2px -698px;
+}
+
+.rank-section .rank .operation .btn.add:hover {
+  background-position: -20px -698px;
+}
+
+.rank-section .rank .operation .btn.favor {
+  background-position: -297px -268px;
+}
+
+.rank-section .rank .operation .btn.favor:hover {
+  background-position: -297px -288px;
+}
+
+.rank-section .content .rank .more {
+  padding-right: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: right;
+}
+
+.rank-section .content .rank .more a:hover {
+  text-decoration: underline;
+}
